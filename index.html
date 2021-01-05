@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Pomodoro</title>
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="tela1-wrapper">
+    <div id="tela1">
+      <button id="btn-iniciar" type="button">&#8227;</button>
+    </div>
+  </div>
+  
+  <div id="tela2-wrapper">
+    <button id="btn-reset" type="button">Reset</button>
+
+    <div id="tela2">
+      <div class="caixa-minutos">
+        <input id="minutos" type="text" value="0" readonly>
+        <p>Minutos</p>
+      </div>
+
+      <div class="caixa-segundos">
+        <input id="segundos" type="text" value="0" readonly>
+        <p>Segundos</p>
+      </div>
+    </div>
+
+    <div class="barra-inferior">Este contador finaliza com um <strong>som</strong> após 25 minutos (1 Pomodoro).</div>
+  </div>
+  
+  <audio id="som-player">
+    <source id="som" src="" type="audio/mpeg">
+  </audio>
+  
+
+  <script src="./index.js"></script>
+</body>
+</html>
